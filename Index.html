@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ccs/bootstrap.min.css">
+<link rel="stylesheet" href="estilos.css">
+<script src ="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<title>El mundo de las células y más</title>
+</head>
+<body>
+
+<!-- Elemento de bienvenida -->
+<div class="welcome-container">
+    <div class="welcome-message">
+        <h1>Bienvenido a nuestra página</h1>
+        <p>Espere un momento mientras cargamos el contenido...</p>
+    </div>
+</div>
+
+<header>
+    <div class="jumbotron">
+    <h1>El mundo de las células y más</h1>
+    <nav>
+            <ul>
+                <li><a href="Historia.html" class="active">Teoría Celular</a></li>
+                <li><a href="Células_eucariotas_y_procariotas.html">Células Procariotas y Eucariotas</a></li>
+                <li><a href="Organismos_pluricelulares_y_uniceulares.html">Organismo pluricelulares y unicelulares</a></li>
+                <li><a href="Caracteristicas_celulas.html">Características de las células</a></li>
+                <li><a href="generalidades.html">Generalidades de las células</a></li> 
+                <li><a href="procariotas_y_eucariotas.html">Datos sobre las células Procariotas y Eucariotas</a></li>
+    </ul>
+    </nav>
+      </header>
+
+    <section>
+	<article>
+        <ul>
+            <h4>¡Hola! Nos alegra que hayas entrado a nuestra página web principal, porque aquí ofrecemos datos interesantes sobre las células, algunos incluso que pocos saben. En los otros enlaces puedes ingresar a nuestras demás páginas para consultar más información sobre las células, pero por ahora ¡Esperamos que esta página te sirva de ayuda!
+        </ul>
+        <h2 id="historia">Puntos interesantes sobre las células</h2>
+		<div class="map-container">
+		<div class="list-container">
+        <ul>
+            <li>Todos los organismos vivos están compuestos por células: Esto significa que las células son la unidad estructural básica de todos los seres vivos, ya sea unicelulares (como las bacterias) o multicelulares (como los animales y las plantas).
+            <li>La célula es la unidad básica de la función biológica: Las células realizan todas las funciones esenciales para la vida, como la reproducción, el crecimiento, la respuesta a estímulos y la obtención de energía.</li>
+            <li>Todas las células provienen de otras células preexistentes: Las células no se generan de manera espontánea; se dividen y dan lugar a nuevas células.</li>
+            <li>Hay más células en tu cuerpo que estrellas en la Vía Láctea: Se estima que un cuerpo humano tiene alrededor de 37 billones de células.</li>
+            <li>Las células más pequeñas son bacterias: Algunas miden tan solo 0.2 micrómetros de diámetro, mientras que las células más grandes pueden ser visibles a simple vista.</li>
+            <li>Tu cuerpo reemplaza millones de células cada minuto: Solo en la piel, pierdes 30,000 a 40,000 células por minuto.</li>
+
+        </ul>
+		</div>
+	</div>
+    </article>
+    <aside class="aside-container">
+        <h2>Video promocional: Las células</h2>
+		<div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VXkW8wrvxN4?si=RZMPLkAfGYxBF30i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+        <h2>Navegador</h2>
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Buscar en Google">
+            <input type="submit" value="Buscar">
+        </form>
+        <h2>Rap de las células</h2>
+		<div class="video-container">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/pGeQkFMyl0w?si=MdvmBX1bBqe42iZh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		</div>
+    </aside>
+</section>
+
+
+<section class="visitor-form">
+    <article>
+        <h2>Registro de Visitantes de la página</h2>
+        <form action="https://formspree.io/f/mbjnnwkr" method="POST">
+            <input type="text" name="name" placeholder="Nombre Completo">
+            <input type="email" name="email" placeholder="Correo Electrónico">
+            <textarea name="comments" placeholder="Comentarios"></textarea>
+            <input type="submit" value="Registrarse">
+        </form>
+    </article>
+</section>
+
+<section class="new-section">
+    <article>
+        <h2>Formulario de encuesta</h2>
+        <form action="https://formspree.io/f/mbjnnwkr" method="POST">
+            <h3>¿Te interesa seguir investigando acerca de las células?</h3>
+            <input type="radio" id="si" name="atraido" value="si">
+            <label for="si">Sí</label><br>
+            <input type="radio" id="no" name="atraido" value="no">
+            <label for="no">No</label><br>
+            <input type="radio" id="talvez" name="atraido" value="talvez">
+            <label for="talvez">Tal vez</label><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2025 El mundo de las células y más - Colegio María Alvarado</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mostrar el mensaje de bienvenida inicialmente
+        setTimeout(function() {
+            var welcomeContainer = document.querySelector('.welcome-container');
+            welcomeContainer.style.opacity = '0';
+            setTimeout(function() {
+                welcomeContainer.style.display = 'none';
+                // Mostrar el contenido de la página
+                var pageContent = document.querySelector('.page-content');
+                pageContent.classList.add('show-content');
+            }, 2000); // 2000 milisegundos (2 segundos) de espera antes de mostrar el contenido
+        }, 2000); // 2000 milisegundos (2 segundos) de espera antes de mostrar el mensaje de bienvenida
+    });
+</script>
+
+</body>
+</html>
+

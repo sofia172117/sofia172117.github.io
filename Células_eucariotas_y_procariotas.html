@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ccs/bootstrap.min.css">
+<link rel="stylesheet" href="estilos.css">
+<script src ="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<title>Células Procariotas y Eucariotas</title>
+</head>
+<body>
+
+<!-- Elemento de bienvenida -->
+<div class="welcome-container">
+    <div class="welcome-message">
+        <h1>Bienvenido a nuestra página</h1>
+        <p>Espere un momento mientras cargamos el contenido...</p>
+    </div>
+</div>
+
+<div class="page-content hidden">
+    
+<header>
+    <div class="jumbotron">
+        <h1>Células Procariotas y Eucariotas</h1>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Index.html" class="active">Página Principal</a></li>
+        <li><a href="Historia.html">La teoria celular</a></li>
+        <li><a href="Organismos_pluricelulares_y_uniceulares.html">Organismo pluricelulares y unicelulares</a></li>
+        <li><a href="Caracteristicas_celulas.html">Características de las células</a></li>
+        <li><a href="generalidades.html">Generalidades de las células</a></li> 
+        <li><a href="procariotas_y_eucariotas.html">Datos sobre las células Procariotas y Eucariotas</a></li>
+    </ul>
+</nav>
+    <section>
+
+        <article>
+          
+          <h2>Células Procariotas</h2>
+      <p>Las células procariotas son organismos unicelulares simples que no poseen núcleo definido. Su material genético está libre en el citoplasma.</p>
+      <ul>
+        <li><strong> Membrana plasmática:</strong> Regula el paso de sustancias.</li>
+        <li><strong>Pared celular:</strong> da forma y protección.</li>
+        <li><strong> Citoplasma:</strong> contiene los componentes celulares.</li>
+        <li><strong>Ribosomas:</strong> responsables de la síntesis de proteínas.</li>
+        <li><strong> ADN circular:</strong> contiene la información genética.</li>
+        <li><strong>Flagelo:</strong> permite el movimiento (en algunas procariotas).</li>
+      </ul>
+          <img src="https://cdn.kastatic.org/ka-perseus-images/c1c593f76311648675c9dd85eefc95a34e6cf643.png" alt="Célula Procariota">
+          
+<h2>Células Eucariotas</h2>
+      <p>Las células eucariotas son más complejas y están presentes en animales, plantas, hongos y protistas. Su material genético está encerrado en un núcleo.</p>
+      <ul>
+        <ul>
+        <li><b> Núcleo:</b> contiene el ADN y controla las funciones celulares.</li>
+        <li><b>Membrana plasmática:</b> delimita la célula.</li>
+        <li><b>Citoplasma:</b> medio donde se encuentran los orgánulos.</li>
+        <li><b>Mitocondrias:</b> producen energía para la célula.</li>
+        <li><b>Ribosomas:</b> sintetizan proteínas.</li>
+          <li><b>Retículo endoplasmático:</b> transporta sustancias.</li>
+        <li><b>¿Aparato de Golgi:</b> modifica y empaqueta proteínas.</li>
+        <li><b>Cloroplastos:</b> (solo en plantas) realizan la fotosíntesis.</li>
+        <li><b>Pared celular:</b> (en plantas) proporciona soporte estructural.</li>
+        <li><b>Vacuolas:</b> almacenan agua y otras sustancias.</li>
+      </ul>
+      </ul>
+          <img src="https://i.pinimg.com/736x/3f/f8/24/3ff824d92693fbf9db1324d0f84605f1.jpg" alt="Célula Eucariota">
+          
+        </article>
+    <aside class="aside-container">
+        <h2>Células Procariotas y Eucariota</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/hXwqVAN2Z0c?si=cYRT5Pf-8PNnSwKz" 
+                title="Reproducción Celular" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+        </div>
+    
+        <h2>Navegador</h2>
+        <section class="search-section">
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input 
+                    type="text" 
+                    name="q" 
+                    placeholder="Buscar en Google..." 
+                    aria-label="Buscar en Google" 
+                    required>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+    </aside>
+
+    </section>
+
+<footer>
+    <p>&copy; Células</p>
+</footer>
+<script>
+    // Mostrar el contenido de la página después de un tiempo determinado
+    window.onload = function() {
+        setTimeout(function() {
+            // Ocultar el mensaje de bienvenida
+            document.querySelector('.welcome-container').style.display = 'none';
+            // Mostrar el contenido de la página
+            document.querySelector('.page-content').classList.remove('hidden');
+        }, 3000); // Ajusta el tiempo de espera (3000ms = 3 segundos)
+    };
+</script>
+</body>
+</html>
+

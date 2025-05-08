@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ccs/bootstrap.min.css">
+<link rel="stylesheet" href="estilos.css">
+<script src ="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<title>Generalidades de las células</title>
+</head>
+<body>
+
+<!-- Elemento de bienvenida -->
+<div class="welcome-container">
+    <div class="welcome-message">
+        <h1>Bienvenido a nuestra página</h1>
+        <p>Espere un momento mientras cargamos el contenido...</p>
+    </div>
+</div>
+
+<div class="page-content hidden">
+    
+<header>
+    <div class="jumbotron">
+        <h1>Generalidades de las células</h1>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Index.html" class="active">Página Principal</a></li>
+        <li><a href="Células_eucariotas_y_procariotas.html">Células Procariotas y Eucariotas</a></li>
+        <li><a href="Historia.html">Teoría Celular</a></li>
+        <li><a href="Caracteristicas_celulas.html">Características de las células</a></li>
+        <li><a href="Organismos_pluricelulares_y_uniceulares.html">Organismos Pluricelulares y Unicelulares</a></li> 
+        <li><a href="procariotas_y_eucariotas.html"> Datos sobre las células Procariotas y Eucariotas</a></li>
+    </ul>
+</nav>
+    <section>
+
+        <article>
+            <h2 id="ciencia">¿Que es la célula?</h2>
+            <p>La célula es la unidad estructural y funcional más pequeña de todos los seres vivos; es la forma más simple de organización biológica que puede considerarse viva. Todas las funciones vitales, como crecer, reproducirse, nutrirse y responder a estímulos, ocurren dentro de la célula o en sus proximidades.
+
+    Existen organismos formados por una sola célula (unicelulares, como las bacterias) y otros por muchas células (pluricelulares, como plantas y animales). Las células pueden clasificarse en dos tipos principales: procariotas (sin núcleo definido, como las bacterias) y eucariotas (con núcleo y orgánulos, como las células animales y vegetales).</p>
+
+        <img src="https://www.genome.gov/sites/default/files/media/images/2022-12/ce_lula.jpeg" alt="Organismo pluricelulares y unicelulares">
+               
+        
+            <h2 id="ciencia">¿Qúe es la teoría celular?</h2>
+
+ <p>La teoría celular es un principio fundamental de la biología que establece que todos los organismos vivos están formados por células, y que la célula es la unidad básica estructural y funcional de la vida. Además, todas las células provienen de otras células preexistentes mediante división celular.
+
+    Los tres fundamentos básicos de la teoría celular son:
+
+    Todos los organismos vivos están compuestos por una o más células.
+
+    La célula es la unidad básica de estructura y función en los organismos.
+
+    Todas las células surgen de células preexistentes por división celular.</p>
+    <img src="https://es-static.z-dn.net/files/d49/46540ba20594793db46c2d6feb6c98b4.png" alt="Teoría Celular">
+        
+        </article>
+
+    <aside class="aside-container">
+        <h2>¿Qué son las células madre?</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/I8xf_l5YJH4?si=6PyPy_-6lCqXMiXX" 
+                title="¿Qué son las células madre?" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    
+        <h2>El cáncer</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/Y0BPGlqwI-E?si=MychivT6Kaf7r3Y_" 
+                title="3 CLAVES para ENTENDER el CÁNCER" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    
+        <h2>Navegador</h2>
+        <section class="search-section">
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input 
+                    type="text" 
+                    name="q" 
+                    placeholder="Buscar en Google..." 
+                    aria-label="Buscar en Google" 
+                    required>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+    </aside>
+
+    </section>
+
+</div>     
+
+<footer>
+    <p>&copy; Células</p>
+</footer>
+<script>
+    // Mostrar el contenido de la página después de un tiempo determinado
+    window.onload = function() {
+        setTimeout(function() {
+            // Ocultar el mensaje de bienvenida
+            document.querySelector('.welcome-container').style.display = 'none';
+            // Mostrar el contenido de la página
+            document.querySelector('.page-content').classList.remove('hidden');
+        }, 3000); // Ajusta el tiempo de espera (3000ms = 3 segundos)
+    };
+</script>
+</body>
+</html>
